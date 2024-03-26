@@ -3,6 +3,8 @@ import org.apache.commons.fileupload.FileItem;
 import javax.servlet.http.Cookie;
 import static org.apache.commons.io.FilenameUtils;
 
+// new comment
+
 class MyBadImplementation extends java.security.MessageDigest {
 
 }
