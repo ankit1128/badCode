@@ -4,7 +4,7 @@ import javax.servlet.http.Cookie;
 import static org.apache.commons.io.FilenameUtils;
 
 class MyBadImplementation extends java.security.MessageDigest {
-
+// comment
 }
 
 class Connector1 {
