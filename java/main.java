@@ -61,6 +61,7 @@ class Connector5 {
     void connect(HttpServletRequest req){
         Keygen keygen = javax.crypto.KeyGenerator.getInstance("Blowfish");
         keygen.init(100);
+        //comment
     }
 }
 
@@ -70,6 +71,7 @@ class Connector6 {
           javax.servlet.http.Cookie cook = new Cookie("cookie");
           cook.setSecure(false);
           req.addCookie(cook);
+        //comment
     }
 }
 
@@ -103,6 +105,8 @@ class Connector9 {
         Cookie cook = new Cookie("cookie");
         for (Cookie cookie : req.getCookies()) {
             cookie.getPath();
+
+            //comment
         }
     }
 }
@@ -112,6 +116,8 @@ class Connector10 {
     void connect(HttpServletRequest req){
         Cookie cook = new Cookie("cookie");
         req.setAttribute(cook.getString(), cook.getVal());
+
+        //comment
     }
 }
 
@@ -119,6 +125,7 @@ public class Decorator1 {
 
     public static void main(String[] args) {
         org.apache.commons.io.FilenameUtils.normalize(args[0]);
+        //comment
     }
 }
 
@@ -129,6 +136,7 @@ public class Decorator2 {
             FileItem[] files = sfu.parseRequest(request);
             for (FileItem file : files) {
                 System.out.println(file.getName());
+                //comment
             }
     }
 }
@@ -138,6 +146,7 @@ public class Decorator3 {
     public void decorator(HttpServletRequest request) {
             Parameter param = request.getParameter('param');
             new java.io.FileReader(param);
+        //comment
     }
 }
 
@@ -145,6 +154,7 @@ public class Decorator4 {
 
     public void decorator(String[] args) {
             new java.io.FileWriter(args[0])
+                //comment
     }
 }
 
@@ -154,6 +164,8 @@ public class Decorator5 {
             FileInputStream fis = new FileInputStream(var);
             javax.xml.transform.Transformer transformer = new Transformer();
             transformer.transform(fis);
+
+        //comment
     }
 }
 
@@ -163,6 +175,7 @@ public class Decorator6 {
         Parameter param = request.getParameter('param');
         added = param + "addition";
         new java.io.FileInputStream(added);
+        //comment
     }
 }
 
@@ -171,6 +184,7 @@ public class Decorator7 {
     public void decorator(String[] args) {
             String param = args[0];
             new java.io.RandomAccessFile(param);
+        //comment
     }
 }
 
@@ -184,6 +198,7 @@ public class LambdaFunctionHandler implements RequestHandler < Request, String >
       s = "Sucess " + String.format("Added %s %s %s %s %s.", request.emp_id, request.month, request.year, request.overtime);
     }
     return s;
+      //comment
   }
 }
 
