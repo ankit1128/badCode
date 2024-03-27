@@ -38,6 +38,7 @@ class Connector2 {
     @javax.jws.WebMethod
     void connect(HttpServletRequest req){
         SymmetricEncryptionConfig sec = new com.hazelcast.config.SymmetricEncryptionConfig();
+        // test comment
     }
 }
 
@@ -129,6 +130,7 @@ public class Decorator2 {
             FileItem[] files = sfu.parseRequest(request);
             for (FileItem file : files) {
                 System.out.println(file.getName());
+                // test comment
             }
     }
 }
